@@ -1,0 +1,7 @@
+{"id":"avankziar-proxyjoinmessage",
+"name":"ProxyJoinMessage",
+"version":"1-0-0",
+"description":"Greet and say goodbye to players",
+"authors":["Avankziar"],
+"dependencies":[],
+"main":"main.java.me.avankziar.pjm.velocity.PJM"}
