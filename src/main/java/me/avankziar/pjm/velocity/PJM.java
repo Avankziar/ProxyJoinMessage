@@ -40,6 +40,7 @@ public class PJM
     @Subscribe
     public void onProxyInitialization(ProxyInitializeEvent event) 
     {
+    	logger = Logger.getLogger("PJM");
     	PluginDescription pd = server.getPluginManager().getPlugin("avankziar-proxyjoinmessage").get().getDescription();
         List<String> dependencies = new ArrayList<>();
         pd.getDependencies().stream().allMatch(x -> dependencies.add(x.toString()));
