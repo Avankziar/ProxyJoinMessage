@@ -1,5 +1,6 @@
 Feature Request
 - /broadcast <Nachricht>, Sendet allen Spielern eine Nachricht
+- Title beim Joinen von Spielern schicken.
 
 Build 1-0-0
 - Join Nachricht für neue und normale Spieler hinzugefügt
