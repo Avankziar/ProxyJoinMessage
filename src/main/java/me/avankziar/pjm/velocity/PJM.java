@@ -17,7 +17,7 @@ import main.java.me.avankziar.pjm.velocity.database.YamlHandler;
 import main.java.me.avankziar.pjm.velocity.database.YamlManager;
 import main.java.me.avankziar.pjm.velocity.listener.JoinLeaveListener;
 
-@Plugin(id = "avankziar-proxyjoinmessage", name = "ProxyJoinMessage", version = "1-0-0",
+@Plugin(id = "proxyjoinmessage", name = "ProxyJoinMessage", version = "1-0-0",
 		url = "https://example.org", description = "Greet and say goodbye to players", authors = {"Avankziar"})
 public class PJM
 {
@@ -41,9 +41,9 @@ public class PJM
     public void onProxyInitialization(ProxyInitializeEvent event) 
     {
     	logger = Logger.getLogger("PJM");
-    	PluginDescription pd = server.getPluginManager().getPlugin("avankziar-proxyjoinmessage").get().getDescription();
+    	PluginDescription pd = server.getPluginManager().getPlugin("proxyjoinmessage").get().getDescription();
         List<String> dependencies = new ArrayList<>();
-        pd.getDependencies().stream().allMatch(x -> dependencies.add(x.toString()));
+        pd.getDependencies().stream().allMatch(x -> dependencies.add(x.getId()));
         //https://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=PJM
 		logger.info(" ██████╗     ██╗███╗   ███╗ | Id: "+pd.getId());
 		logger.info(" ██╔══██╗    ██║████╗ ████║ | Version: "+pd.getVersion().get());
